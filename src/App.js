@@ -131,7 +131,7 @@ const App = ({ lessonFilter }) => {
         error={error}
         loaded={loaded}
         rowHeight={getRowHeight(
-          tableDataAndInterval ? tableDataAndInterval.timeInterval : [8, 20]
+          tableDataAndInterval ? tableDataAndInterval.timeInterval : [8, 16]
         )}
       />
       {error && <FullscreenError error={error} />}

@@ -48,7 +48,7 @@ export const apiToTimetableData = (apiData, compact) => {
   return tableDataConverted;
 };
 
-export const getTimeRange = (apiDataTable, smallestRange = [8, 20]) => {
+export const getTimeRange = (apiDataTable, smallestRange = [8, 16]) => {
   const range = [
     Math.min(smallestRange[0], apiDataTable[0].ura),
     Math.max(smallestRange[1], apiDataTable[0].ura + apiDataTable[0].trajanje),
